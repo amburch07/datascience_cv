@@ -1,0 +1,12 @@
+Python Packages:
+tensorflow==1.7
+scipy
+scikit-learn
+opencv-python
+h5py
+matplotlib
+Pillow
+requests
+psutil
+
+Note: Switching between Mac and PC will require adjusting file paths
