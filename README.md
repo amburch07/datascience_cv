@@ -15,21 +15,14 @@
 2. Documentation
 
 
-## Plan
-| **Week** | **Tasks** |
-| ----------- | ----------- |
-| Week 1 | First progress report, research/literature review, get hardware/prototype, begin networking components |
-| Week 2 | Networking components, begin application side, research web deployment |
-| Week 3 | Work on application (Machine learning/computer vision), work on network components |
-| Week 4 | Complete application, complete network, test, fix bugs |
-| Week 5 | Fix bugs, Presentation, Code on GitHub/Documentation, Demo |
-
 ## Team Members
 - Arianna Burch
 
-- Tarek Elkheir
+- An Huynh
 
-- Chris Villamarin
+- Sofia Lee
+
+- Tin Wong
 
 
 
@@ -39,32 +32,10 @@
 3. On command prompt/terminal, cd into `ProcessingServer/src` subfolder for `ProcessingServer.py`
 4. On second command prompt/terminal, cd into `CameraServer` subfolder for  `WebSocketServer.py`
 5. Download `Brackets` application and open `Web` subfolder in application
+6. On third command prompt/terminal, cd into `ProcessingServer/src` subfolder for `ProcessingServer.py` 
 
 ## To Run
 1. Run `ProcessingServer.py`
 2. Run `WebSocketServer.py`
-3. Go to brackets open index.html from left sidebar. Click lightening icon on right side.
-
-
-
-## Ignore below this
-
-#### Align Training Set (Isolate Face)
-`python3 -W ignore src/align/align_dataset_mtcnn.py datasets/train datasets/train_clean`
-
-#### Train Classifier
-`python3 -W ignore src/classifier.py TRAIN datasets/train_clean /models/20180408-102900.pb models/classifier.pkl --batch_size 25`
-
-#### Align Test
-`python3 -W ignore src/align/align_dataset_mtcnn.py datasets/test datasets/test_clean`
-
-#### Classification of Test Set
-`python3 -W ignore src/classifier.py CLASSIFY datasets/test_clean models/20180408-102900.pb models/classifier.pkl`
-
-#### To Classify Camera Inputs (separate from full networking application - only run to see classifier by itself)
-Images must be saved in `datasets/test_pi` in `Unknown` subfolder
-
-Align input: `python3 -W ignore src/align/align_dataset_mtcnn.py datasets/test_pi datasets/test_pi_clean`
-
-`python -W ignore src/classifier.py CLASSIFY datasets/test_pi_clean models/20180408-102900.pb models/classifier.pkl > output.txt`
-
+3. Run `objectDetectiontest.py` to jumpstart python3 app (you won't need it after that)
+4. Go to brackets open index.html from left sidebar. Click lightening icon on right side.
